@@ -10,13 +10,15 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   tf)
 
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 
 include_directories(
   include
 	${catkin_INCLUDE_DIRS} 
-	#${EIGEN3_INCLUDE_DIR}
+	${EIGEN3_INCLUDE_DIR}
 	${PCL_INCLUDE_DIRS})
 
 catkin_package(
