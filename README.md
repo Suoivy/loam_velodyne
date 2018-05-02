@@ -23,9 +23,11 @@ $ source ~/catkin_ws/devel/setup.bash
 Running:
 
 For RS-Lidar-32
+```
 $ roslaunch loam_velodyne loam_velodyne.launch
 
 $ roslaunch rslidar_pointcloud rs_lidar_32.launch
+```
 
 (or other launch file read from pcap file. The pointcloud topic is "/rslidar_points")
 
@@ -36,9 +38,9 @@ You need modify the launch file to change remap.
     <remap from="/multi_scan_points" to="/rslidar_points" />
 change the topic you used.
 and run
-
+```
 $ roslaunch loam_velodyne loam_velodyne.launch lidartype:=HDL-32 (options: VLP-16  HDL-32  HDL-64E RS-32)
-
+```
 Then play the bag or launch the velodyne lidar you used.
 
 /**Original Author**/
