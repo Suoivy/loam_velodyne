@@ -16,7 +16,7 @@ $ cd ~/catkin_ws
 $ catkin_make -DCMAKE_BUILD_TYPE=Release 
 $ source ~/catkin_ws/devel/setup.bash
 ```
-/***********************Modified by Chuanzhe Suo*********************/
+/**Modified by Chuanzhe Suo**/
 1. Added the support to RS_lidar_32(Robosense Tech)(You can support RS_16 also just need change one line)
 2. Modified the roslaunch file to launch
 
@@ -27,7 +27,7 @@ $ roslaunch rslidar_pointcloud rs_lidar_32.launch
 (or other launch file read from pcap file. The pointcloud topic is "/rslidar_points")
 
 For Velodyne
-# You need modify the launch file to change remap.
+You need modify the launch file to change remap.
     <!-- remap from="/multi_scan_points" to="/velodyne_points" -->
     <remap from="/multi_scan_points" to="/rslidar_points" />
 change the topic you used.
@@ -36,7 +36,7 @@ $ roslaunch loam_velodyne loam_velodyne.launch lidartype:=HDL-32 (options: VLP-1
 
 Then play the bag or launch the velodyne lidar you used.
 
-/***********************Original Author*****************************/
+/**Original Author**/
 Running:
 For RS-Lidar-32
 
