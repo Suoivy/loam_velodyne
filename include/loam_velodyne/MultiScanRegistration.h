@@ -92,7 +92,7 @@ public:
   static inline MultiScanMapper Velodyne_RS_32() { return MultiScanMapper(-25.03f, 15.03f, 32); };
 
   /** Multi scan mapper for Velodyne RS-16 according to data sheet. */
-  static inline MultiScanMapper Velodyne_RS_16() { return MultiScanMapper(-15f, 15f, 16); };
+  static inline MultiScanMapper Velodyne_RS_16() { return MultiScanMapper(-15, 15, 16); };
 
 
 private:

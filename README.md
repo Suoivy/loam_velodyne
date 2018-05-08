@@ -26,7 +26,11 @@ For RS-Lidar-32
 ```
 $ roslaunch loam_velodyne loam_velodyne.launch
 
+$ roslaunch loam_velodyne loam_velodyne.launch lidartype:=RS-16(for RS-16)
+
 $ roslaunch rslidar_pointcloud rs_lidar_32.launch
+
+$ roslaunch rslidar_pointcloud rs_lidar_16.launch(for RS-16)
 ```
 
 (or other launch file read from pcap file. The pointcloud topic is "/rslidar_points")
@@ -39,7 +43,7 @@ You need modify the launch file to change remap.
 change the topic you used.
 and run
 ```
-$ roslaunch loam_velodyne loam_velodyne.launch lidartype:=HDL-32 (options: VLP-16  HDL-32  HDL-64E RS-32)
+$ roslaunch loam_velodyne loam_velodyne.launch lidartype:=HDL-32 (options: VLP-16  HDL-32  HDL-64E RS-32 RS-16)
 ```
 Then play the bag or launch the velodyne lidar you used.
 

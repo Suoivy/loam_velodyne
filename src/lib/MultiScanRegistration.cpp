@@ -103,7 +103,7 @@ bool MultiScanRegistration::setup(ros::NodeHandle& node,
     } else if (lidarName == "RS-16") {
       _scanMapper = MultiScanMapper::Velodyne_RS_16();
     } else {
-      ROS_ERROR("Invalid lidar parameter: %s (only \"VLP-16\", \"RS-32\", \"HDL-32\" and \"HDL-64E\" are supported)", lidarName.c_str());
+      ROS_ERROR("Invalid lidar parameter: %s (only \"VLP-16\", \"RS-16\", \"RS-32\", \"HDL-32\" and \"HDL-64E\" are supported)", lidarName.c_str());
       return false;
     }
 
